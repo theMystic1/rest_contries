@@ -384,19 +384,6 @@ body {
     /* width: 60rem; */
     width: 100%;
   }
-
-  .country__info {
-    /* padding: 0 8rem; */
-  }
-
-  .listed-shi {
-  }
-
-  .name {
-    /* padding: 4rem; */
-
-    /* text-align: center; */
-  }
 }
 
 @media (max-width: 40em) {

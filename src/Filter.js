@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Countries } from "./Countries";
 
 export const region = [
   {
