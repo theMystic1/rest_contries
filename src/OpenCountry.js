@@ -45,7 +45,7 @@ export function OpenCountry({
         </button>
       </form>
 
-      <ul className="info-contry">
+      <article className="info-contry">
         {openData.map((dta) => (
           <OpenCountryList
             name={dta.name}
@@ -62,7 +62,7 @@ export function OpenCountry({
             onHandleBorerCnt={handleBorderCnt}
           />
         ))}
-      </ul>
+      </article>
     </div>
   );
 }
@@ -103,49 +103,49 @@ function OpenCountryList({
           </h2>
 
           <div className="listed-shi">
-            <ul className="native-det">
-              <li>
+            <article className="native-det">
+              <div className="det">
                 <span>Native Name:</span>
                 {/* {nativeName} */}
                 {Object.values(nativeName)[0].common}
-              </li>
+              </div>
 
-              <li>
+              <div className="det">
                 <span>Population:</span>
                 {addCommasToNumber(population)}
-              </li>
+              </div>
 
-              <li>
+              <div className="det">
                 <span>Region:</span>
                 {region}
-              </li>
+              </div>
               {subregion && (
-                <li>
+                <div className="det">
                   <span>Sub Region:</span>
                   {subregion}
-                </li>
+                </div>
               )}
 
-              <li>
+              <div className="det">
                 <span>Capital:</span>
                 {capital}
-              </li>
-            </ul>
+              </div>
+            </article>
 
-            <ul className="native-det">
-              <li>
+            <article className="native-det">
+              <div className="det">
                 <span>Top Level Domain:</span>
                 {tld}
-              </li>
-              <li>
+              </div>
+              <div className="det">
                 <span>Currencies:</span>
                 {currency}
-              </li>
-              <li>
+              </div>
+              <div className="det">
                 <span>Languages:</span>
                 {languages}
-              </li>
-            </ul>
+              </div>
+            </article>
           </div>
           <p className="border-names">Border Countries:</p>
           <ul className="border-countries">

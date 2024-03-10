@@ -18,25 +18,25 @@ export function CountriesList({
   }
 
   return (
-    <li className="country-detail" onClick={() => onHandleClick(name)}>
+    <article className="country-detail" onClick={() => onHandleClick(name)}>
       <span className="cnt-img">
         <img src={flag} alt="flag" />
       </span>
-      <ul className="details">
+      <div className="details">
         <p className="country-name">{name}</p>
-        <li>
+        <div className="detail">
           <span className="info">Population:</span>
           <span className="info-det">{addCommasToNumber(population)}</span>
-        </li>
-        <li>
+        </div>
+        <div className="detail">
           <span className="info">Region:</span>
           <span className="info-det">{region}</span>
-        </li>
-        <li>
+        </div>
+        <div className="detail">
           <span className="info">Capital:</span>
           <span className="info-det">{capital}</span>
-        </li>
-      </ul>
-    </li>
+        </div>
+      </div>
+    </article>
   );
 }

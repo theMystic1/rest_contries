@@ -3,7 +3,7 @@ import { CountriesList } from "./CountriesList";
 export function Countries({ countries, onHandleClick }) {
   // console.log(countries);
   return (
-    <ul className="countries-container">
+    <section className="countries-container">
       {countries?.map((country, index) => (
         <CountriesList
           name={country.name}
@@ -16,6 +16,6 @@ export function Countries({ countries, onHandleClick }) {
           onHandleClick={onHandleClick}
         />
       ))}
-    </ul>
+    </section>
   );
 }

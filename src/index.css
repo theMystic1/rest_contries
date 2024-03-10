@@ -201,12 +201,12 @@ body {
   padding: 2rem 2rem 4rem 2rem;
 }
 
-.details li {
+.details .detail {
   display: flex;
   align-items: center;
   margin-bottom: 1.2rem;
 }
-.details li .info {
+.details .detail .info {
   font-size: 1.2rem;
   color: var(--very-dark-blue);
 
@@ -215,7 +215,7 @@ body {
   margin-right: 1.2rem;
 }
 
-.details li .info-det {
+.details .detail .info-det {
   font-size: 1.2rem;
   color: var(--very-dark-blue);
 }
@@ -261,14 +261,14 @@ body {
   margin-right: 2rem;
 }
 
-.native-det li {
+.native-det .det {
   list-style: none;
   font-size: 1.4rem;
   margin-bottom: 1.2rem;
   color: var(--very-dark-blue);
 }
 
-.native-det li span {
+.native-det .det span {
   font-size: 1.4rem;
   color: var(--very-dark-blue);
 

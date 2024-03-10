@@ -72,7 +72,6 @@ export function Filter(props) {
     try {
       props.setIsLoading(true);
       const res = await fetch(`https://restcountries.com/v3.1/name/${query}`);
-      console.log(res);
 
       if (!res.ok) {
         if (res.status === 404) {
@@ -105,6 +104,11 @@ export function Filter(props) {
     } finally {
       props.setIsLoading(false);
     }
+  }
+
+  function handleRegion(regname) {
+    setIsOpen(false);
+    props.onHandleRegion(regname);
   }
 
   return (
@@ -140,7 +144,7 @@ export function Filter(props) {
       {isOpen && (
         <ul className="select-region">
           {region.map((reg, i) => (
-            <li key={i} onClick={() => props.onHandleRegion(reg.name)}>
+            <li key={i} onClick={() => handleRegion(reg.name)}>
               {reg.name}
             </li>
           ))}
